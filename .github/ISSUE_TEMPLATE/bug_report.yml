@@ -1,0 +1,79 @@
+name: Bug report
+description: Report an Amazing Blender Add-ons problem.
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Public downloads are not available yet. Identify the version tested.
+        Do not upload game files, private addon ZIPs, music, caches or complete scenes.
+        Remove personal paths and account details from screenshots and errors.
+        Delta's library/importer beta does not include a game-ready model exporter.
+  - type: dropdown
+    id: addon
+    attributes:
+      label: Affected add-on
+      options:
+        - Silent Fox Delta
+        - Silent Fox Venom
+        - Amazing Packer
+    validations:
+      required: true
+  - type: input
+    id: addon_version
+    attributes:
+      label: Add-on version
+    validations:
+      required: true
+  - type: input
+    id: blender_version
+    attributes:
+      label: Blender version
+    validations:
+      required: true
+  - type: input
+    id: operating_system
+    attributes:
+      label: Operating system and version
+  - type: dropdown
+    id: feature
+    attributes:
+      label: Affected feature
+      options:
+        - Setup or catalog loading
+        - Dragging or importing one model
+        - Import Multiple
+        - Materials or related parts
+        - Cancellation or undo/redo
+        - Camo PNG/TGA export
+        - Texture packing or previews
+        - Texture names or output formats
+        - Add-on updates
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: asset_or_preset
+    attributes:
+      label: Asset tile/category or texture preset
+      description: Leave blank if not applicable. Do not include personal file paths.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Optional cropped screenshot or short redacted error excerpt.
+    validations:
+      required: true
