@@ -1,0 +1,10 @@
+# Documentation-only release area. New public files require explicit review.
+*
+!/.gitignore
+!/README.md
+!/SUPPORT.md
+!/.github/
+/.github/*
+!/.github/ISSUE_TEMPLATE/
+/.github/ISSUE_TEMPLATE/*
+!/.github/ISSUE_TEMPLATE/bug_report.yml
